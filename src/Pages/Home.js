@@ -19,17 +19,17 @@ const Home = () => {
         justifyContent="space-between"
       >
         <Image
-          boxSize={['50%', '50%', '50%', 'none']}
+          boxSize={['50%', '50%', '50%', '20%']}
           src="assets/token.svg"
           alt=""
         />
         <Image
-          boxSize={['50%', '50%', '50%', 'none']}
+          boxSize={['50%', '50%', '50%', '20%']}
           src="assets/metamask.svg"
           alt=""
         />
         <Image
-          boxSize={['50%', '50%', '50%', 'none']}
+          boxSize={['50%', '50%', '50%', '20%']}
           src="assets/opensea.svg"
           alt=""
         />

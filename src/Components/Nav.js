@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 // import { GrClose } from 'react-icons/gr';
 import Harmburger from './Hamburger';
 import { NavLink } from 'react-router-dom';
+import AddWallet from './Home/ConnectWalletModal';
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
@@ -97,48 +98,56 @@ const Nav = () => {
         >
           <NavLink to="">
             <Text
-              _hover={{ textDecoration: 'none' }}
+              _hover={{ color: '#A02279', textDecoration: 'none' }}
               textAlign={['center', 'none']}
               fontSize={['1rem', '.85rem', '.85rem', '20px']}
               color="#434343"
               fontWeight="400"
-              _active={{ color: '#000' }}
+              _active={{ color: '#A02279' }}
+              
+              _focus={{ color: '#A02279' }}
             >
               Home
             </Text>
           </NavLink>
-          <NavLink to="">
+          <NavLink to="/place-to-stay">
             <Text
-              _hover={{ textDecoration: 'none' }}
+              _hover={{ color: '#A02279', textDecoration: 'none' }}
               textAlign={['center', 'none']}
               fontSize={['1rem', '.85rem', '.85rem', '20px']}
               color="#434343"
               fontWeight="400"
-              _active={{ color: '#000' }}
+              _active={{ color: '#A02279' }}
+              
+              _focus={{ color: '#A02279' }}
             >
               Place to stay
             </Text>
           </NavLink>
           <NavLink to="">
             <Text
-              _hover={{ textDecoration: 'none' }}
+              _hover={{ color: '#A02279', textDecoration: 'none' }}
               textAlign={['center', 'none']}
               fontSize={['1rem', '.85rem', '.85rem', '20px']}
               color="#434343"
               fontWeight="500"
-              _active={{ color: '#000' }}
+              _active={{ color: '#A02279' }}
+              
+              _focus={{ color: '#A02279' }}
             >
               NFTs
             </Text>
           </NavLink>
           <NavLink to="">
             <Text
-              _hover={{ textDecoration: 'none' }}
+              _hover={{ color: '#A02279', textDecoration: 'none' }}
               textAlign={['center', 'none']}
               fontSize={['1rem', '.85rem', '.85rem', '20px']}
               color="#434343"
               fontWeight="500"
-              _active={{ color: '#000' }}
+              _active={{ color: '#A02279' }}
+              
+              _focus={{ color: '#A02279' }}
             >
               Community
             </Text>
@@ -151,25 +160,7 @@ const Nav = () => {
           direction={['column', 'row']}
           gap={['2', '10']}
         >
-          <NavLink to="">
-            <Text
-              _hover={{ textDecoration: 'none' }}
-              textAlign={['center', 'none']}
-              fontSize={['1rem', '.75rem', '.75rem', '16px']}
-              color="#fff"
-              w={['170px', '150px', '100px', '170px']}
-              h={['48px', '38px', '38px', '48px']}
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              bg="linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)"
-              fontWeight="400"
-              borderRadius="10px"
-              _active={{ color: '#000' }}
-            >
-              Connect Wallet
-            </Text>
-          </NavLink>
+          <AddWallet />
         </Stack>
       </Stack>
     </Box>

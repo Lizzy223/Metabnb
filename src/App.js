@@ -7,15 +7,19 @@ import {
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Nav from './Components/Nav';
+import Footer from './Components/Home/Footer';
+import Place from './Pages/Place';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box >
-        <Nav/>
+      <Box>
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          </Routes>
+          <Route path="/place-to-stay" element={<Place />} />
+        </Routes>
+        <Footer />
       </Box>
     </ChakraProvider>
   );
