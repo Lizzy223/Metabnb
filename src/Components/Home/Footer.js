@@ -14,7 +14,12 @@ const Footer = () => {
     >
       <Grid
         gap={['6', '12']}
-        templateColumns={['repeat(2,1fr)', 'repeat(4,1fr)']}
+        templateColumns={[
+          'repeat(1,1fr)',
+          'repeat(2,1fr)',
+          'repeat(2,1fr)',
+          'repeat(4,1fr)',
+        ]}
       >
         <VStack
           alignItems={['center', 'flex-start !important']}

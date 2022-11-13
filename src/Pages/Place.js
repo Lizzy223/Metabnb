@@ -107,6 +107,7 @@ const Place = () => {
           'repeat(2,1fr)',
           'repeat(4,1fr)',
         ]}
+        mb='1.5rem'
       >
         <Card img="assets/a1.png" />
         <Card img="assets/a2.png" />
