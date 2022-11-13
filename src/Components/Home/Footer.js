@@ -9,9 +9,9 @@ const Footer = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      
       bg="#1D1D1E"
-      p={['2rem', '0']}
+      px={['2rem', '2rem']}
+      py={['2rem', '0']}
     >
       <Grid
         gap={['6', '12']}
@@ -23,17 +23,19 @@ const Footer = () => {
         ]}
       >
         <VStack
-          alignItems={['center', 'flex-start !important']}
+          alignItems={['center', 'flex-start']}
           justifyContent="center"
-          gap={['4', '8']}
+          gap={['4', '12']}
         >
-          <Image src="assets/Group.svg" boxSize={['50%','none']} alt="" />
+          <Image src="assets/Group.svg" boxSize={['50%', 'full']} alt="" />
           <HStack float="left" gap="8">
-            <Image src="assets/fb.png" alt="" />
+            <Image src="assets/fg.png" alt="" />
             <Image src="assets/ig.png" alt="" />
             <Image src="assets/tw.png" alt="" />
           </HStack>
           <Image src="assets/copy.png" alt="" />
+          {/* <Text fontSize="18px" mb="1rem" fontWeight="700" color="#fff"></Text>
+          <Text fontSize="14px" fontWeight="400" color="#F1F3F9"></Text> */}
         </VStack>
         <VStack
           justifyContent="center"
